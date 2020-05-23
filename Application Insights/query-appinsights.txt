@@ -1,0 +1,18 @@
+dependencies 
+| limit 1000 
+| project operation_Name, timestamp, data, duration 
+
+dependencies 
+| limit 1000 
+| where operation_Name == "GET Entity/Get"
+| project operation_Name, timestamp, data, duration
+
+dependencies 
+| limit 1000 
+| where operation_Name == "GET Dapper/Get"
+| project operation_Name, timestamp, data, duration
+
+dependencies 
+| limit 1000 
+| where operation_Name == "GET NHibernate/Get"
+| project operation_Name, timestamp, data, duration
